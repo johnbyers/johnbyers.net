@@ -1,0 +1,199 @@
+<html>
+
+<head><title>johnbyers.net</title></head>
+
+<body>
+
+<style>
+
+	#funStuff {
+		grid-column: 2;
+	}
+
+	.gridWrapper {
+		display: grid;
+  		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	@keyframes fadeAnimation {
+	  0%   { opacity:0; }
+	  100% { opacity:1; }
+	}
+
+	#recent {
+		grid-column: 1;
+	}
+
+	.animate-fade {
+	   -webkit-animation: fadeAnimation 5s;
+	   -moz-animation: fadeAnimation 5s;
+	   -o-animation: fadeAnimation 5s;
+	    animation: fadeAnimation 5s;
+	}
+</style>
+
+
+<h1>Welcome to johnbyers.net</h1>
+<hr>
+
+<div id="logoDiv" class="hidden" style="text-align: center; background-color: black; top: 0; position: fixed; height: 100vh; width: 100vw">
+	<span id="closeLogo" style="position: fixed; top: 1vh; left: 99vw; color: gray; cursor: pointer;">X</span>
+	<img id="logo" src="images/jb.png" style="border: none;"></img>
+</div>
+
+
+<button id="btnPlayIntro">Play Intro</button>
+
+<div id="mainContent">
+	<div class="gridWrapper">
+		<div id="recent">
+			<h2>Recent pages:</h2>
+			<ul>
+				<li><a href="blog/goosebumps.php">October 30, 2021 - Goosebumps Covers Ranked</a></li>
+				<li><a href="blog/badTechnology.php">August 25, 2021 - Bad Technologies</a></li>
+				<li><a href="tools/emojiSelect.php">April 14, 2021 - Emoji Select</a></li>
+				<li><a href="tools/timeTool.php">April 14, 2021 - Unix Time Tool</a></li>
+				<li><a href="blog/topGames2020.php">April 3, 2021 - Top Games 2020</a></li>
+				<li><a href="blog/top10Trails.php">April 3, 2021 - Top 10 Mountain Bike Trails</a></li>
+				<li><a href="blog/moths.php">October 30, 2020 - Scariest Moths</a></li>
+				<li><a href="reviews/tablo.php">October 30, 2020 - TV Without Cable</a></li>
+				<li><a href="reviews/marioOdyssey.php">October 30, 2020 - Super Mario Odyssey Review</a></li>
+				<li><a href="blog/gen2bittersweet.php">August 23, 2020 - Pokemon Gen 2 - 9 Year old's Perspective</a></li>
+				<li><a href="blog/pokemonRumors.php">August 23, 2020 - Playground Pokemon Rumors</a></li>
+				<li><a href="blog/EnglandScotland.pdf">June 10, 2020 - England Scotland Trip</a></li>
+				<li><a href="blog/bondThemesRanked.php">June 10, 2020 - Bond Themes Ranked</a></li>
+				<li><a href="books/briCreatine.php">May 9, 2020 - Bri and the Creatine</a></li>
+				<li><a href="blog/topShows2019.php">January 6, 2020 - Top TV Shows 2019</a></li>
+				<li><a href="reviews/evangelionReview.php">January 6, 2020 - Neon Genesis Evangelion Review</a></li>
+				<li><a href="blog/tenYearsBike.php">December 21, 2019 - Ten Years of Mountain Biking</a></li>
+				<li><a href="blog/topGames2019.php">December 15, 2019 - Top Games 2019</a></li>
+				<li><a href="blog/soccerJerseysRanked.php">December 15, 2019 - Soccer Jerseys Ranked</a></li>
+				<li><a href="blog/sportsTeams.php">November 13, 2019 - Utah's Horribly Named Sports Teams</a></li>
+				<li><a href="blog/haloMaps.php">November 13, 2019 - Top 10 Halo Maps</a></li>
+				<li><a href="reviews/stateFlags.php">September 17, 2019 - 50 State Flags Reviewed</a></li>
+				<li><a href="blog/otherGames.php">April 16, 2019 - Top 10 Other Games</a></li>
+				<li><a href="blog/boardGames.php">April 16, 2019 - Top 10 Board Games</a></li>
+				<li><a href="blog/aquarium.php">April 16, 2019 - John Byers Ultimate Aquarium</a></li>
+				<li><a href="blog/grahams.php">April 5, 2019 - Graham Cracker Reviews</a></li>
+				<li><a href="reviews/superhot.php">March 9, 2019 - Superhot VR Review</a></li>
+				<li><a href="blog/topGames2018.php">March 2, 2019 - Top Games 2018</a></li>
+				<li><a href="blog/synesthesia.php">February 22, 2019 - What color is that word?</a></li>
+				<li><a href="reviews/spyroCrash.php">December 15, 2018 - Spyro: Enter the Dragonfly and Crash Bandicoot: Wrath of Cortex</a></li>
+				<li><a href="blog/smartphoneRoots.php">December 15, 2018 - History of Smartphone Operating Systems</a></li>
+				<li><a href="blog/snakeTournament.php">November 4, 2018 - World Cup Snake Battle Royale</a></li>
+				<li><a href="blog/choosingATeam.php">November 3, 2018 - How to choose a European soccer team</a></li>
+				<li><a href="blog/halloweenMovies.php">October 21, 2018 - Favorite Halloween Movies</a></li>
+				<li><a href="reviews/yoshiStory.php">October 8, 2018 - Yoshi's Story Review</a></li>
+				<li><a href="enigma/enigma.php">October 6, 2018 - Enigma Machine</a></li>
+				<li><a href="blog/modernGoldeneye.php">October 4, 2018 - Ways to play Goldeneye in 2018</a></li>
+				<li><a href="blog/soccerBlog.php">October 3, 2018 - My 20+ Years of Soccer</a></li>
+				<li><a href="reviews/crash2.php">October 3, 2018 - Crash Bandicoot 2 Review</a></li>
+				<li><a href="reviews/untersberg.php">September 22, 2018 - Untersberg Review</a></li>
+				<li><a href="blog/europe2018.pdf">September 20, 2018 - Europe Trip 2018</a></li>
+				<li><a href="quiz/dbzQuiz.php">September 20, 2018 - Quiz - Which Dragon Ball Z character are you?</a></li>
+				<li><a href="blog/usSoccer.php">September 14, 2018 - Changes to USA Soccer</a></li>
+				<li><a href="blog/months.php">September 14, 2018 - Months of the year Ranked</a></li>
+				<li><a href="reviews/tearaway.php">September 10, 2018 - Tearaway Review</a></li>
+				<li><a href="blog/topCereal.php">September 10, 2018 - Top Cereals</a></li>
+				<li><a href="blog/yellowstone.php">August 17, 2018 - Yellowstone Memories</a></li>
+				<li><a href="blog/favoriteDinos.php">August 17, 2018 - Favorite Dinosaurs</a></li>
+				<li><a href="reviews/tech/spyro2Review.php">August 15, 2018 - Spyro 2 Review</a></li>
+				<li><a href="wordWizard/wordWizardExplain.php">August 15, 2018 - Introducing the Word Wizard</a></li>
+				<li><a href="reviews/cecretLake.php">July 23, 2018 - Cecret Lake Hike</a></li>
+				<li><a href="reviews/marioSunshine.php">July 17, 2018 - Super Mario Sunshine Review</a></li>
+				<li><a href="reviews/jurassicWorld2.php">July 9, 2018 - Jurassic World: Fallen Kingdom Review</a></li>
+				<li><a href="blog/favoriteArcades.php">July 6, 2018 - Arcades</a></li>
+				<li><a href="blog/wowButterCandy.php">July 6, 2018 - Wow Butter Candy Recipe</a></li>
+				<li><a href="blog/top5WithDenon.php">June 21, 2018 - Top 5 Games All Time...With Denon!</a></li>
+				<li><a href="reviews/counterStrike.php">May 26, 2018 - CounterStrike Review</a></li>
+				<li><a href="blog/asia2015.pdf">May 20, 2018 - Korea Japan Trip 2015</a></li>
+				<li><a href="blog/asia2016.pdf">May 20, 2018 - Korea Russia Trip 2016</a></li>
+				<li><a href="blog/IcelandTrip.pdf">May 20, 2018 - Iceland Trip 2018</a></li>
+				<li><a href="reviews/spyroReview.php">May 9, 2018 - Spyro the Dragon Review</a></li>
+				<li><a href="reviews/tech/vitaReview.php">May 9, 2018 - PS Vita Review</a></li>
+				<li><a href="reviews/banjoKazooie.php">May 4, 2018 - Banjo Kazooie Review</a></li>
+				<li><a href="blog/vgMusic.php">May 2, 2018 - Favorite Video Game Music</a></li>
+				<li><a href="reviews/conkerReview.php">April 28, 2018 - Conker's Bad Fur Day Review</a></li>
+				<li><a href="blog/favoriteGamecubeGames.php">April 24, 2018 - Top 10 Gamecube Games</a></li>
+				<li><a href="blog/favoriteMountains.php">April 23, 2018 - My Favorite Mountains</a></li>
+				<li><a href="reviews/tech/seaOfThievesReview.php">April 15, 2018 - Sea of Thieves Review</a></li>
+				<li><a href="reviews/bayouTeche.php">April 12, 2018 - Bayou Teche Experience Review</a></li>
+				<li><a href="blog/favoriteCardGames.php">April 8, 2018 - My Favorite Trading Card Games</a></li>
+				<li><a href="reviews/pubg.php">April 5, 2018 - Player Unknown's Battlegrounds Review</a></li>
+				<li><a href="blog/vans.php">March 30, 2018 - Vans vs Crossovers</a></li>
+				<li><a href="reviews/tech/moviePassReview.php">March 25, 2018 - MoviePass Review</a></li>
+				<li><a href="blog/top10Fps.php">March 24, 2018 - My Top 10 FPS Games</a></li>
+				<li><a href="blog/favoriteControllers.php">March 22, 2018 - Top 5 Favorite Controllers</a></li>
+				<li><a href="reviews/tech/superMarioLand2.php">March 18, 2018 - Super Mario Land 2 Review</a></li>
+				<li><a href="reviews/tech/skyguide.php">March 15, 2018 - Sky Guide Review</a></li>
+				<li><a href="reviews/talon6.php">March 11, 2018 - Osprey Talon 6 Review</a></li>
+				<li><a href="reviews/xcSki201718.php">March 10, 2018 - XC Ski Year in Review</a></li>
+				<li><a href="blog/foodcourt.php">March 10, 2018 - Desert Island Food Court</a></li>
+				<li><a href="blog/horcruxes.php">March 9, 2018 - My Horcrux Choices</a></li>
+				<li><a href="reviews/mountainBike/moscowMountainReview.php">March 9, 2018 - Moscow Mountain Trail Reviews</a></li>
+				<li><a href="reviews/mountainBike/moscowMountain.php">March 9, 2018 - Great Memories on Moscow Mountain</a></li>
+				<li><a href="reviews/jeremyXC.php">Feb 25, 2018 - Jeremy Ranch Nordic Center XC Ski Review</a></li>
+				<li><a href="reviews/millcreek.php">Feb 25, 2018 - Millcreek XC Ski Review - UPDATED</a></li>
+				<li><a href="blog/favoriteLevels.php">Feb 22, 2018 - Favorite Video Game Levels</a></li>
+				<li><a href="blog/topGames2017.php">Feb 19, 2018 - Top Games 2017</a></li>
+				<li><a href="blog/gamingLaptops.php">Feb 19, 2018 - Defending Gaming Laptops</a></li>
+				<li><a href="reviews/tech/asusGL502.php">Feb 18, 2018 - Asus GL 502 Gaming Laptop Review</a></li>
+				<li><a href="reviews/fortnite.php">Feb 15, 2018 - Fortnite Review</a></li>
+				<li><a href="reviews/solitude.php">Feb 5, 2018 - Solitude XC Ski Review</a></li>
+				<li><a href="reviews/jumanji.php">Feb 4, 2018 - Jumanji 2017 Review</a></li>
+				<li><a href="reviews/millcreek.php">Feb 4, 2018 - Millcreek XC Ski Review</a></li>
+			</ul>
+		</div>
+
+		<div id="funStuff">
+			<h2>Fun Stuff</h2>
+			<ul>
+				<li><button id="btnPlayIntro2">Play Intro</button></li>
+				<li><a href="wordWizard/wordWizard.php">Word Wizard</a></li>
+				<li><a href="enigma/enigma.php">Enigma Machine</a></li>
+				<li><a href="quiz/dbzQuiz.php">Quiz - Which Dragon Ball Z character are you?</a></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+<hr/>
+<div style="text-align: center;"><a href="/about.php">About this website</a></div>
+
+<script>
+	
+	document.getElementById("btnPlayIntro2").addEventListener("click", function(){
+		document.getElementById("logoDiv").classList.remove("hidden");
+		document.getElementById("logoDiv").classList.add("animate-fade");
+		let a = new Audio("ps1.mp3");
+		a.play();
+
+		a.addEventListener("ended", function(){
+			document.getElementById("logoDiv").classList.add("hidden");
+		});
+
+	});
+
+	document.getElementById("btnPlayIntro").addEventListener("click", function(){
+		document.getElementById("logoDiv").classList.remove("hidden");
+		document.getElementById("logoDiv").classList.add("animate-fade");
+		let a = new Audio("ps1.mp3");
+		a.play();
+
+		a.addEventListener("ended", function(){
+			document.getElementById("logoDiv").classList.add("hidden");
+		});
+
+	});
+
+	document.getElementById("closeLogo").addEventListener("click", function(){
+		document.getElementById("logoDiv").classList.add("hidden");
+	});
+</script>
+</body>
+</html>
